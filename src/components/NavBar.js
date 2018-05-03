@@ -14,26 +14,26 @@ const NavBar = (props) => {
                         <span className="icon-bar"/>
                         <span className="icon-bar"/>
                     </button>
-                    <Link className="navbar-brand" to="/">Adriano Regis</Link>
+                    <a className="navbar-brand" href="/">Adriano Regis</a>
                 </div>
 
                 {/* Collect the nav links, forms, and other content for toggling */}
                 <div className="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                     <ul className="nav navbar-nav navbar-right">
                         <li className="hidden">
-                            <Link to=""/>
+                            <a href="#page-top"></a>
                         </li>
                         <li className="page-scroll">
-                            <Link to="">Início</Link>
+                            <a href="#page-top">Início</a>
                         </li>
                         <li className="page-scroll">
-                            <Link to="">Portfolio</Link>
+                            <a href="#portfolio">Portfolio</a>
                         </li>
                         <li className="page-scroll">
-                            <Link to="">Sobre</Link>
+                            <a href="#about">Sobre</a>
                         </li>
                         <li className="page-scroll">
-                            <Link to="">Contate-me</Link>
+                            <a href="#contact">Contate-me</a>
                         </li>
                     </ul>
                 </div>

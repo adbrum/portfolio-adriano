@@ -2,7 +2,7 @@ import React from 'react'
 
 const Contact = (props) => {
     return(
-        <h1>Contato</h1>
+        <h1 id="contact">Contato</h1>
     )
 }
 

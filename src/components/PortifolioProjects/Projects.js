@@ -1,7 +1,9 @@
 import React, {Component} from 'react'
-import {Link, Route} from 'react-router-dom'
 import LinkProject from "./LinkProject";
-import Project_01 from "./Project_01";
+import Project_01 from "./Project/Project_01";
+import Project_02 from "./Project/Project_02";
+import Project_03 from "./Project/Project_03";
+import Project_04 from "./Project/Project_04";
 
 
 class Projects extends Component {
@@ -11,10 +13,17 @@ class Projects extends Component {
         this.state = {
             view_project: false,
             id_project: '',
-            img: ''
+            img: '',
+            projects: {
+                1: '<Project_01 onClickHandle={this.onClickHandle} src={this.state.img}/>',
+                2: '<Project_02 onClickHandle={this.onClickHandle} src={this.state.img}/>',
+                3: '<Project_03 onClickHandle={this.onClickHandle} src={this.state.img}/>',
+                4: '<Project_04 onClickHandle={this.onClickHandle} src={this.state.img}/>',
+            }
         }
 
         this.viewHandle = this.viewHandle.bind(this)
+        this.onClickHandle = this.onClickHandle.bind(this)
     }
 
     viewHandle(id, img) {
@@ -25,19 +34,20 @@ class Projects extends Component {
         })
     }
 
+    onClickHandle = () => {
+        window.location.href = '/#portfolio';
+    }
+
     render() {
         if (this.state.view_project === false) {
             return (
                 <div>
-                    {JSON.stringify(this.state.view_project)}
                     {Object.keys(this.props.project).map(key => {
                         const project = this.props.project[key]
                         return (
                             <div onClick={() => this.viewHandle(project.id, project.img)}
                                  key={key}>
                                 <LinkProject key={key} project={project}/>
-                                {/*<Route exact path={`/project/${this.props.project[key].name}`}*/}
-                                {/*render={() => <Project_01 project={project}/>}/>*/}
                             </div>
                         )
                     })}
@@ -45,42 +55,22 @@ class Projects extends Component {
             )
         }
 
-
         if (this.state.view_project) {
             {
-
                 if (this.state.id_project === 1) {
-                    return (
-                        <Project_01 src={this.state.img}/>
-                    )
+                    return <Project_01 onClickHandle={this.onClickHandle} src={this.state.img}/>
                 }
                 if (this.state.id_project === 2) {
-                    return (
-                        <div>
-                            {JSON.stringify('XXX 02: ', this.state.view_project)}
-                        </div>
-                    )
+                    return <Project_02 onClickHandle={this.onClickHandle} src={this.state.img}/>
                 }
                 if (this.state.id_project === 3) {
-                    return (
-                        <div>
-                            {JSON.stringify('XXX 03: ', this.state.view_project)}
-                        </div>
-                    )
+                    return <Project_03 onClickHandle={this.onClickHandle} src={this.state.img}/>
+                }
+                if (this.state.id_project === 4) {
+                    return <Project_04 onClickHandle={this.onClickHandle} src={this.state.img}/>
                 }
             }
         }
-
-        // if (this.state.view_project) {
-        //     return (
-        //         <div>
-        //             <div>
-        //                 {JSON.stringify('XXX: ', this.state.view_project)}
-        //             </div>
-        //         </div>
-        //
-        //     )
-        // }
     }
 }
 

@@ -1,5 +1,5 @@
 import React from 'react'
-import { Link } from 'react-router-dom'
+
 
 const NavBar = (props) => {
     return(
@@ -14,26 +14,26 @@ const NavBar = (props) => {
                         <span className="icon-bar"/>
                         <span className="icon-bar"/>
                     </button>
-                    <a className="navbar-brand" href="/">Adriano Regis</a>
+                    <a className="navbar-brand" href="/#pagetop">Adriano Regis</a>
                 </div>
 
                 {/* Collect the nav links, forms, and other content for toggling */}
                 <div className="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                     <ul className="nav navbar-nav navbar-right">
                         <li className="hidden">
-                            <a href="#page-top"></a>
+                            <a href="/#pagetop"/>
                         </li>
                         <li className="page-scroll">
-                            <a href="#page-top">Início</a>
+                            <a href="/#pagetop">Início</a>
                         </li>
                         <li className="page-scroll">
-                            <a href="#portfolio">Portfolio</a>
+                            <a href="/#portfolio">Portfolio</a>
                         </li>
                         <li className="page-scroll">
-                            <a href="#about">Sobre</a>
+                            <a href="/#about">Sobre</a>
                         </li>
                         <li className="page-scroll">
-                            <a href="#contact">Contate-me</a>
+                            <a href="/#contact">Contate-me</a>
                         </li>
                     </ul>
                 </div>

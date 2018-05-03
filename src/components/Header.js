@@ -5,7 +5,7 @@ const Header = (props) => {
     return (
         <div>
             <header>
-                <div id="page-top" className="container">
+                <div id="pagetop" className="container">
                     <div className="row">
                         <div className="col-lg-12">
                             <img className="img-responsive" src={image} alt=""/>

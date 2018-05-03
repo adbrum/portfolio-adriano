@@ -1,12 +1,5 @@
 import React, {Component} from 'react'
-import {Link, Route} from 'react-router-dom'
-// import kettclub from '../images/portfolio/kettclub.png'
-// import gestvisitor from '../images/portfolio/gestvisitor.png'
-// import swns from '../images/portfolio/swms.png'
-// import eventex from '../images/portfolio/eventex.png'
-import LinkProject from "./PortifolioProjects/LinkProject";
 import Projects from "./PortifolioProjects/Projects";
-// import Project01 from "./PortifolioProjects/Project01";
 
 class Section extends Component {
     constructor(props) {
@@ -15,15 +8,16 @@ class Section extends Component {
         this.state = {
 
             project: [
+
                 {
                     id: 1,
-                    name: 'kettclub',
-                    img: '../images/portfolio/kettclub.png'
+                    name: 'eventex',
+                    img: '../images/portfolio/eventex.png'
                 },
                 {
                     id: 2,
-                    name: 'gestvisitor',
-                    img: '../images/portfolio/gestvisitor.png'
+                    name: 'kettclub',
+                    img: '../images/portfolio/kettclub.png'
                 },
                 {
                     id: 3,
@@ -32,15 +26,14 @@ class Section extends Component {
                 },
                 {
                     id: 4,
-                    name: 'eventex',
-                    img: '../images/portfolio/eventex.png'
+                    name: 'gestvisitor',
+                    img: '../images/portfolio/gestvisitor.png'
                 }
             ]
         }
     }
 
     render() {
-        {JSON.stringify(this.countryFlagByCode)}
         return (
             <div>
                 <hr id="portfolio"/>

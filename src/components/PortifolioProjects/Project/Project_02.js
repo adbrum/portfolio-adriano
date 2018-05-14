@@ -1,8 +1,8 @@
 import React from 'react'
 
 const Project_01 = (props) => {
-
     return (
+        <section id="portfolio">
         <div className="container">
             <div className="row">
                 <div className="col-lg-8 col-lg-offset-2">
@@ -48,6 +48,7 @@ const Project_01 = (props) => {
                 </div>
             </div>
         </div>
+        </section>
     )
 }
 

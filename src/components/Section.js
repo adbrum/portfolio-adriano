@@ -12,22 +12,22 @@ class Section extends Component {
                 {
                     id: 1,
                     name: 'eventex',
-                    img: '../images/portfolio/eventex.png'
+                    img: '../../images/portfolio/eventex.png'
                 },
                 {
                     id: 2,
                     name: 'kettclub',
-                    img: '../images/portfolio/kettclub.png'
+                    img: '../../images/portfolio/kettclub.png'
                 },
                 {
                     id: 3,
                     name: 'swns',
-                    img: '../images/portfolio/swms.png'
+                    img: '../../images/portfolio/swms.png'
                 },
                 {
                     id: 4,
                     name: 'gestvisitor',
-                    img: '../images/portfolio/gestvisitor.png'
+                    img: '../../images/portfolio/gestvisitor.png'
                 }
             ]
         }
@@ -37,8 +37,7 @@ class Section extends Component {
         return (
             <div>
                 <hr id="portfolio"/>
-                {/*Portfolio Grid Section*/}
-                <section >
+                <section id="portfolio">
                     <div className="container">
                         <div className="row">
                             <div className="col-lg-12 text-center">

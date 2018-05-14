@@ -11,31 +11,35 @@ class Section extends Component {
             project: [
 
                 {
-                    id: 1,
+                    id: 5,
                     name: 'boraajudar',
                     img: '../../images/portfolio/bora_ajudar.png'
-
                 },
                 {
-                    id: 2,
+                    id: 6,
+                    name: 'ekmembers',
+                    img: '../../images/portfolio/ekmembers.png'
+                },
+                {
+                    id: 1,
                     name: 'eventex',
                     img: '../../images/portfolio/eventex.png'
                 },
                 {
-                    id: 3,
+                    id: 2,
                     name: 'kettclub',
                     img: '../../images/portfolio/kettclub.png'
                 },
                 {
-                    id: 4,
+                    id: 3,
                     name: 'swns',
                     img: '../../images/portfolio/swms.png'
                 },
                 {
-                    id: 5,
+                    id: 4,
                     name: 'gestvisitor',
                     img: '../../images/portfolio/gestvisitor.png'
-                }
+                },
             ]
         }
     }

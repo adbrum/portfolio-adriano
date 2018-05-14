@@ -12,21 +12,27 @@ class Section extends Component {
 
                 {
                     id: 1,
+                    name: 'boraajudar',
+                    img: '../../images/portfolio/bora_ajudar.png'
+
+                },
+                {
+                    id: 2,
                     name: 'eventex',
                     img: '../../images/portfolio/eventex.png'
                 },
                 {
-                    id: 2,
+                    id: 3,
                     name: 'kettclub',
                     img: '../../images/portfolio/kettclub.png'
                 },
                 {
-                    id: 3,
+                    id: 4,
                     name: 'swns',
                     img: '../../images/portfolio/swms.png'
                 },
                 {
-                    id: 4,
+                    id: 5,
                     name: 'gestvisitor',
                     img: '../../images/portfolio/gestvisitor.png'
                 }

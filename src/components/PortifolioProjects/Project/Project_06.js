@@ -1,6 +1,6 @@
 import React from 'react'
 
-const Project_01 = (props) => {
+const Project_06 = (props) => {
 
     return (
         <div className="row">
@@ -32,7 +32,7 @@ const Project_01 = (props) => {
                         </li>
                     </ul>
                     <button type="button" onClick={props.onClickHandle} className="btn btn-default" data-dismiss="modal">
-                        <i className="fa fa-times"/> retornar
+                        <i className="fa fa-arrow-circle-left"/> retornar
                     </button>
                 </div>
             </div>
@@ -40,4 +40,4 @@ const Project_01 = (props) => {
     )
 }
 
-export default Project_01
+export default Project_06

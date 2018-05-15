@@ -1,6 +1,5 @@
 import React, {Component} from 'react'
 import Projects from "./PortifolioProjects/Projects";
-import {Link} from 'react-router-dom'
 
 class Section extends Component {
     constructor(props) {

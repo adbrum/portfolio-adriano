@@ -15,7 +15,7 @@ const Project_06 = (props) => {
                     </a>
                     <h6>*Textos e Projeto no idioma Pt-pt</h6>
                     <h6>ReactJS</h6>
-                    <p>O Sistema de gestão de sócios do Futebol Clube do Porto</p>
+                    <p>Sistema de gestão de sócios do Futebol Clube do Porto</p>
                         <a href="http://exclusivkey.com/"> EKMembers</a>,
                         foi desenvolvido na empresa
                         <a href="http://exclusivkey.com/"> ExclusivKey</a>

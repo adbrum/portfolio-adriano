@@ -32,6 +32,11 @@ const Footer = (props) => {
                                        className="btn-social btn-outline">
                                         <i className="fa fa-fw fa-linkedin"/></a>
                                 </li>
+                                <li>
+                                    <a href="https://github.com/adbrum"
+                                       className="btn-social btn-outline">
+                                        <i className="fa fa-fw fa-github"/></a>
+                                </li>
                             </ul>
                         </div>
                         <div className="footer-col col-md-4">
